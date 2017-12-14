@@ -2,7 +2,7 @@ import Reactant
 import UIKit
 
 final class RepositoryCell: ViewBase<Repository, Void>, Reactant.TableViewCell {
-    static let height: CGFloat = 60
+    static let height: CGFloat = 70
 
     let name = UILabel()
     let starCount = UILabel()

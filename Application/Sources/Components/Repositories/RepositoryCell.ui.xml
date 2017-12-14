@@ -6,27 +6,36 @@
     xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
     http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
 
-    <Label
-        field="name"
-        font=":bold@20"
-        numberOfLines="2"
+    <Container
+        layout:id="text"
         layout:leading="super inset(8)"
-        layout:trailing="super inset(8)"
-        layout:top="super inset(8)" />
+        layout:top="super inset(8)"
+        layout:bottom="super inset(8)"
+        layout:centerY="super" >
+
+        <Label
+            field="name"
+            font=":bold@20"
+            numberOfLines="1"
+            layout:leading="super"
+            layout:trailing="super"
+            layout:top="super" />
+
+        <Label
+            field="language"
+            font="14"
+            numberOfLines="1"
+            layout:leading="super"
+            layout:trailing="super"
+            layout:below="name offset(8)"
+            layout:bottom="super" />
+    </Container>
 
     <Label
         field="starCount"
         font="14"
         numberOfLines="1"
-        layout:after=":gt language offset(10)"
+        layout:after=":gt id:text offset(10)"
         layout:trailing="super inset(10)"
-        layout:bottom="super inset(8)" />
-
-    <Label
-        field="language"
-        font="14"
-        numberOfLines="1"
-        layout:leading="super inset(10)"
-        layout:below=":gt name offset(8)"
-        layout:bottom="super inset(8)" />
+        layout:centerY="super" />
 </Component>
