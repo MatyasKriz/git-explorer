@@ -18,12 +18,10 @@ private struct Endpoints: EndpointProvider {
 }
 
 final class DataService {
-
     private let fetcher: Fetcher
 
-    init() {
-        fetcher = Fetcher(requestPerformer: AlamofireRequestPerformer())
-        fetcher.register(requestEnhancers: RequestLogger(defaultOptions: .all))
+    init(fetcher: Fetcher) {
+        self.fetcher = fetcher
     }
 
     func users(perPage: Int = Constants.usersPerPage) -> Observable<[User]> {

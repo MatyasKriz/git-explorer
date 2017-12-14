@@ -1,3 +1,11 @@
+import Fetcher
+
 final class ApplicationModule: DependencyModule {
-    let dataService = DataService()
+    let fetcher: Fetcher
+    let dataService: DataService
+
+    init() {
+        fetcher = Fetcher(requestPerformer: AlamofireRequestPerformer())
+        dataService = DataService(fetcher: fetcher)
+    }
 }
