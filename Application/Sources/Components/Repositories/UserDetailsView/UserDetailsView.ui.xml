@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Component
+    xmlns="http://schema.reactant.tech/ui"
+    xmlns:layout="http://schema.reactant.tech/layout"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
+    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
+
+    <View
+        backgroundColor="#e6e6e6"
+        clipsToBounds="true"
+        layer.cornerRadius="26"
+        layout:center="avatar"
+        layout:size="104" />
+
+    <ImageView
+        field="avatar"
+        layout:leading="super inset(16)"
+        layout:fillVertically="super inset(16)"
+        clipsToBounds="true"
+        layer.cornerRadius="25"
+        layout:size="100" />
+
+    <Container
+        layout:id="infoContainer"
+        layout:after="avatar offset(12)"
+        layout:trailing="super inset(12)"
+        layout:top="avatar">
+
+        <Label
+            field="login"
+            adjustsFontSizeToFitWidth="true"
+            font=":bold@20"
+            numberOfLines="1"
+            layout:leading="super"
+            layout:top="super" />
+
+        <Label
+            field="totalStars"
+            layout:leading="super"
+            layout:below="login offset(5)" />
+
+        <Label
+            field="totalRepositories"
+            layout:leading="super"
+            layout:below="totalStars offset(5)" />
+
+        <Label
+            field="favoriteLanguage"
+            layout:leading="super"
+            layout:below="totalRepositories offset(5)" />
+    </Container>
+
+    <View
+        backgroundColor="#e6e6e6"
+        layout:height="1"
+        layout:fillHorizontally="super"
+        layout:bottom="super" />
+</Component>

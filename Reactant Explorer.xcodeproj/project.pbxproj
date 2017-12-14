@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6809B0FA1FDAB62A00D8A690 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809B0F91FDAB62A00D8A690 /* UserDetailsView.swift */; };
+		6809B0FC1FDAB63900D8A690 /* UserDetailsView.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6809B0FB1FDAB63900D8A690 /* UserDetailsView.ui.xml */; };
+		6809B0FF1FDAB8F500D8A690 /* Array+mostFrequentElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809B0FE1FDAB8F500D8A690 /* Array+mostFrequentElement.swift */; };
+		689D95DA1FD963720068074E /* URL+withQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95D91FD963720068074E /* URL+withQueries.swift */; };
+		689D95DC1FD967150068074E /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95DB1FD967150068074E /* UserDTO.swift */; };
+		689D95DE1FD9671D0068074E /* RepositoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95DD1FD9671D0068074E /* RepositoryDTO.swift */; };
+		689D95E01FD96DF70068074E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95DF1FD96DF70068074E /* DataService.swift */; };
+		689D95E21FD96F030068074E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95E11FD96F030068074E /* Constants.swift */; };
+		689D95E61FD975470068074E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95E51FD975470068074E /* User.swift */; };
+		689D95E81FD975B40068074E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95E71FD975B40068074E /* Repository.swift */; };
+		689D95EA1FD980B80068074E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95E91FD980B80068074E /* UserCell.swift */; };
+		689D95EC1FD980C60068074E /* UserCell.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = 689D95EB1FD980C60068074E /* UserCell.ui.xml */; };
+		689D95EF1FD983DD0068074E /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95EE1FD983DD0068074E /* RepositoryCell.swift */; };
+		689D95F11FD9850E0068074E /* RepositoryCell.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = 689D95F01FD9850E0068074E /* RepositoryCell.ui.xml */; };
+		689D95F31FD98A2E0068074E /* RepositoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95F21FD98A2E0068074E /* RepositoriesController.swift */; };
+		689D95F51FD98A3D0068074E /* RepositoriesRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D95F41FD98A3D0068074E /* RepositoriesRootView.swift */; };
+		689D95F71FD98A490068074E /* RepositoriesRootView.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = 689D95F61FD98A490068074E /* RepositoriesRootView.ui.xml */; };
 		DDC80999FEF613A114607323 /* Pods_Reactant_Explorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE53C6A4AEBDAB58BD8F610 /* Pods_Reactant_Explorer.framework */; };
-		OBJ_39 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SampleModel.swift */; };
 		OBJ_40 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GeneratedUI.swift */; };
 		OBJ_41 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MainRootView.swift */; };
 		OBJ_42 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MainController.swift */; };
-		OBJ_43 /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* SampleService.swift */; };
 		OBJ_44 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MainWireframe.swift */; };
 		OBJ_45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* AppDelegate.swift */; };
 		OBJ_46 /* DependencyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* DependencyModule.swift */; };
@@ -25,14 +40,29 @@
 /* Begin PBXFileReference section */
 		14151E692179DB9D0251F37D /* Pods-Reactant Explorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant Explorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant Explorer/Pods-Reactant Explorer.release.xcconfig"; sourceTree = "<group>"; };
 		4FFAA91D71EFDBCA82354502 /* Pods-Reactant Explorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant Explorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant Explorer/Pods-Reactant Explorer.debug.xcconfig"; sourceTree = "<group>"; };
+		6809B0F91FDAB62A00D8A690 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		6809B0FB1FDAB63900D8A690 /* UserDetailsView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = UserDetailsView.ui.xml; sourceTree = "<group>"; };
+		6809B0FE1FDAB8F500D8A690 /* Array+mostFrequentElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+mostFrequentElement.swift"; sourceTree = "<group>"; };
+		689D95D91FD963720068074E /* URL+withQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+withQueries.swift"; sourceTree = "<group>"; };
+		689D95DB1FD967150068074E /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		689D95DD1FD9671D0068074E /* RepositoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDTO.swift; sourceTree = "<group>"; };
+		689D95DF1FD96DF70068074E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		689D95E11FD96F030068074E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		689D95E51FD975470068074E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		689D95E71FD975B40068074E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		689D95E91FD980B80068074E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		689D95EB1FD980C60068074E /* UserCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = UserCell.ui.xml; sourceTree = "<group>"; };
+		689D95EE1FD983DD0068074E /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		689D95F01FD9850E0068074E /* RepositoryCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RepositoryCell.ui.xml; sourceTree = "<group>"; };
+		689D95F21FD98A2E0068074E /* RepositoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesController.swift; sourceTree = "<group>"; };
+		689D95F41FD98A3D0068074E /* RepositoriesRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRootView.swift; sourceTree = "<group>"; };
+		689D95F61FD98A490068074E /* RepositoriesRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RepositoriesRootView.ui.xml; sourceTree = "<group>"; };
 		CDE53C6A4AEBDAB58BD8F610 /* Pods_Reactant_Explorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reactant_Explorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
-		OBJ_13 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		OBJ_16 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
 		OBJ_17 /* MainRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainRootView.ui.xml; sourceTree = "<group>"; };
 		OBJ_18 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		OBJ_20 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
-		OBJ_22 /* SampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleService.swift; sourceTree = "<group>"; };
 		OBJ_24 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		OBJ_25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		OBJ_26 /* DependencyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyModule.swift; sourceTree = "<group>"; };
@@ -64,6 +94,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6809B0FD1FDAB63F00D8A690 /* UserDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				6809B0F91FDAB62A00D8A690 /* UserDetailsView.swift */,
+				6809B0FB1FDAB63900D8A690 /* UserDetailsView.ui.xml */,
+			);
+			path = UserDetailsView;
+			sourceTree = "<group>";
+		};
+		689D95D81FD963590068074E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				689D95D91FD963720068074E /* URL+withQueries.swift */,
+				689D95E11FD96F030068074E /* Constants.swift */,
+				6809B0FE1FDAB8F500D8A690 /* Array+mostFrequentElement.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		689D95ED1FD983BF0068074E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				689D95F21FD98A2E0068074E /* RepositoriesController.swift */,
+				689D95F41FD98A3D0068074E /* RepositoriesRootView.swift */,
+				689D95F61FD98A490068074E /* RepositoriesRootView.ui.xml */,
+				689D95EE1FD983DD0068074E /* RepositoryCell.swift */,
+				689D95F01FD9850E0068074E /* RepositoryCell.ui.xml */,
+				6809B0FD1FDAB63F00D8A690 /* UserDetailsView */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		6A9615FD1142463D28BB58E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +138,7 @@
 		OBJ_11 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				689D95D81FD963590068074E /* Utils */,
 				OBJ_12 /* Models */,
 				OBJ_14 /* Components */,
 				OBJ_19 /* Styles */,
@@ -91,7 +154,10 @@
 		OBJ_12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* SampleModel.swift */,
+				689D95DB1FD967150068074E /* UserDTO.swift */,
+				689D95DD1FD9671D0068074E /* RepositoryDTO.swift */,
+				689D95E51FD975470068074E /* User.swift */,
+				689D95E71FD975B40068074E /* Repository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_15 /* Main */,
+				689D95ED1FD983BF0068074E /* Repositories */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -107,9 +174,11 @@
 		OBJ_15 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_18 /* MainController.swift */,
 				OBJ_16 /* MainRootView.swift */,
 				OBJ_17 /* MainRootView.ui.xml */,
-				OBJ_18 /* MainController.swift */,
+				689D95E91FD980B80068074E /* UserCell.swift */,
+				689D95EB1FD980C60068074E /* UserCell.ui.xml */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -125,7 +194,7 @@
 		OBJ_21 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* SampleService.swift */,
+				689D95DF1FD96DF70068074E /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,7 +218,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Products */,
@@ -157,7 +226,6 @@
 				6A9615FD1142463D28BB58E5 /* Pods */,
 				251706EDAAB8983F7C7E1243 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_6 /* Products */ = {
@@ -219,7 +287,7 @@
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
 					OBJ_33 = {
-						DevelopmentTeam = Brightify;
+						DevelopmentTeam = Z4J75M6GAC;
 					};
 				};
 			};
@@ -230,7 +298,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,8 +314,12 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_49 /* Assets.xcassets in Resources */,
+				689D95F71FD98A490068074E /* RepositoriesRootView.ui.xml in Resources */,
+				6809B0FC1FDAB63900D8A690 /* UserDetailsView.ui.xml in Resources */,
+				689D95EC1FD980C60068074E /* UserCell.ui.xml in Resources */,
 				OBJ_50 /* LaunchScreen.storyboard in Resources */,
 				OBJ_51 /* Localizable.strings in Resources */,
+				689D95F11FD9850E0068074E /* RepositoryCell.ui.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +333,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reactant Explorer/Pods-Reactant Explorer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DataMapper/DataMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Fetcher/Fetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/Reactant/Reactant.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactantLiveUI/ReactantLiveUI.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -273,7 +348,10 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DataMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reactant.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactantLiveUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -339,14 +417,25 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_40 /* GeneratedUI.swift in Sources */,
-				OBJ_39 /* SampleModel.swift in Sources */,
+				689D95E61FD975470068074E /* User.swift in Sources */,
+				689D95F51FD98A3D0068074E /* RepositoriesRootView.swift in Sources */,
+				689D95E01FD96DF70068074E /* DataService.swift in Sources */,
 				OBJ_41 /* MainRootView.swift in Sources */,
 				OBJ_42 /* MainController.swift in Sources */,
-				OBJ_43 /* SampleService.swift in Sources */,
 				OBJ_44 /* MainWireframe.swift in Sources */,
+				6809B0FA1FDAB62A00D8A690 /* UserDetailsView.swift in Sources */,
+				689D95DA1FD963720068074E /* URL+withQueries.swift in Sources */,
+				689D95E81FD975B40068074E /* Repository.swift in Sources */,
+				689D95EA1FD980B80068074E /* UserCell.swift in Sources */,
 				OBJ_45 /* AppDelegate.swift in Sources */,
 				OBJ_46 /* DependencyModule.swift in Sources */,
 				OBJ_47 /* ApplicationModule.swift in Sources */,
+				6809B0FF1FDAB8F500D8A690 /* Array+mostFrequentElement.swift in Sources */,
+				689D95DC1FD967150068074E /* UserDTO.swift in Sources */,
+				689D95DE1FD9671D0068074E /* RepositoryDTO.swift in Sources */,
+				689D95E21FD96F030068074E /* Constants.swift in Sources */,
+				689D95F31FD98A2E0068074E /* RepositoriesController.swift in Sources */,
+				689D95EF1FD983DD0068074E /* RepositoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Brightify;
+				DEVELOPMENT_TEAM = Z4J75M6GAC;
 				ENABLE_TESTABILITY = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Application/Resources/Info.plist;
@@ -402,7 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Brightify;
+				DEVELOPMENT_TEAM = Z4J75M6GAC;
 				ENABLE_TESTABILITY = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Application/Resources/Info.plist;

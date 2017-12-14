@@ -1,5 +1,24 @@
 PODS:
+  - Alamofire (4.5.1)
+  - DataMapper (0.2.0):
+    - DataMapper/Core (= 0.2.0)
+    - DataMapper/JsonSerializer (= 0.2.0)
+  - DataMapper/Core (0.2.0)
+  - DataMapper/JsonSerializer (0.2.0):
+    - DataMapper/Core
   - Differentiator (3.0.2)
+  - Fetcher (0.2.0):
+    - Fetcher/AlamofireRequestPerformer (= 0.2.0)
+    - Fetcher/Core (= 0.2.0)
+  - Fetcher/AlamofireRequestPerformer (0.2.0):
+    - Alamofire (~> 4.3)
+    - Fetcher/Core
+  - Fetcher/Core (0.2.0):
+    - DataMapper (~> 0.2)
+    - Result (~> 3.2)
+  - Fetcher/RxFetcher (0.2.0):
+    - Fetcher/Core
+    - RxSwift (~> 4.0)
   - Reactant (1.0.6):
     - Reactant/Core (= 1.0.6)
     - Reactant/Result (= 1.0.6)
@@ -39,31 +58,36 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - Fetcher
+  - Fetcher/RxFetcher
   - Reactant (~> 1.0)
-  - ReactantLiveUI (from `https://github.com/Brightify/ReactantUI`, branch `san-andreas`)
-  - ReactantUI (from `https://github.com/Brightify/ReactantUI`, branch `san-andreas`)
+  - ReactantLiveUI (from `https://github.com/Brightify/ReactantUI`, branch `tvOS`)
+  - ReactantUI (from `https://github.com/Brightify/ReactantUI`, branch `tvOS`)
 
 EXTERNAL SOURCES:
   ReactantLiveUI:
-    :branch: san-andreas
+    :branch: tvOS
     :git: https://github.com/Brightify/ReactantUI
   ReactantUI:
-    :branch: san-andreas
+    :branch: tvOS
     :git: https://github.com/Brightify/ReactantUI
 
 CHECKOUT OPTIONS:
   ReactantLiveUI:
-    :commit: 24ce06e18b2583594535bb09194bbc9f1be8eb53
+    :commit: 8bbafa21a7b023658e80e2afe6e395c604e3ae8b
     :git: https://github.com/Brightify/ReactantUI
   ReactantUI:
-    :commit: 24ce06e18b2583594535bb09194bbc9f1be8eb53
+    :commit: 8bbafa21a7b023658e80e2afe6e395c604e3ae8b
     :git: https://github.com/Brightify/ReactantUI
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  DataMapper: f33d650f587a3241216763ee6377e3c3f1041c47
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Fetcher: d09e86cb5c3d3f3c5a7f06d1f41b852d3fe3fdf0
   Reactant: a41efb7cd8499b1571de61fb5ee74fbe3657aa30
-  ReactantLiveUI: a9980993b7eca35bf392779a175cecf535d8a595
-  ReactantUI: 6f9a041787d2d89f1b95e5adb19bb5ff6c0446e6
+  ReactantLiveUI: f08a73995182eddc578bebf9ca98846cab833438
+  ReactantUI: a38a6706526f0dfc95c4920eefb1791b3344f3bb
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
@@ -71,6 +95,6 @@ SPEC CHECKSUMS:
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 135dd3496af94476bed5e3d6b4ba7efe66cd5c2d
+PODFILE CHECKSUM: 6cd370063c13e1e225680c339d881b822c26eb8f
 
 COCOAPODS: 1.3.1

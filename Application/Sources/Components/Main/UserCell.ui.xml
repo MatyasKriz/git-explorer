@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Component
+    xmlns="http://schema.reactant.tech/ui"
+    xmlns:layout="http://schema.reactant.tech/layout"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
+    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
+
+    <Label
+        field="login"
+        font=":bold@20"
+        numberOfLines="1"
+        layout:after="avatar offset(16)"
+        layout:top="super inset(26)" />
+
+    <View
+        backgroundColor="#e6e6e6"
+        clipsToBounds="true"
+        layer.cornerRadius="16"
+        layout:center="avatar"
+        layout:width="self.height"
+        layout:fillVertically="super inset(8)" />
+
+    <ImageView
+        field="avatar"
+        layout:leading="super inset(10)"
+        clipsToBounds="true"
+        layer.cornerRadius="15"
+        layout:width="self.height"
+        layout:fillVertically="super inset(10)" />
+</Component>
