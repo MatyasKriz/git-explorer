@@ -11,7 +11,13 @@ final class RepositoryCell: ViewBase<Repository, Void>, Reactant.TableViewCell {
     override func update() {
         name.text = componentState.name
         starCount.text = "🌟 \(componentState.stars)"
-        language.text = componentState.language != "None" ? "Language: \(componentState.language)" : nil
+        if let repositoryLanguage = componentState.language {
+            language.visibility = .visible
+            language.text = "Language: \(repositoryLanguage)"
+        } else {
+            language.visibility = .collapsed
+            language.text = nil
+        }
     }
 
     func setHighlighted(_ highlighted: Bool, animated: Bool) {

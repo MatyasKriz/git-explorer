@@ -45,7 +45,7 @@ final class DataService {
                 guard let data = response.rawData else { return [] }
                 return ((try? JSONDecoder().decode([RepositoryDTO].self, from: data)) ?? [])
                     .map { repositoryDTO in
-                        return Repository(name: repositoryDTO.name, stars: repositoryDTO.stars, language: repositoryDTO.language ?? "None", url: repositoryDTO.url)
+                        return Repository(name: repositoryDTO.name, stars: repositoryDTO.stars, language: repositoryDTO.language, url: repositoryDTO.url)
                     }
             }
     }
