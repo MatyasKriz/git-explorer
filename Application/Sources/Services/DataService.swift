@@ -1,7 +1,5 @@
 import Fetcher
 import class RxSwift.Observable
-import Result
-import UIKit
 
 private struct Endpoints: EndpointProvider {
     static func users(position: Int, perPage: Int) -> GET<Void, Data> {
