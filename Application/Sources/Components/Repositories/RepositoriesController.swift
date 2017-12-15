@@ -26,7 +26,7 @@ final class RepositoriesController: ControllerBase<Void, RepositoriesRootView> {
         self.rootView.componentState = (self.properties.user, nil)
         dependencies.dataService.repositories(login: properties.user.login)
             .subscribe(onNext: { [unowned self] repositories in
-                self.rootView.componentState = (self.properties.user, repositories)
+                self.rootView.componentState = (self.properties.user, repositories.sorted(by: { $0.stars > $1.stars }))
             })
             .disposed(by: lifetimeDisposeBag)
     }
