@@ -17,17 +17,19 @@ private struct Endpoints: EndpointProvider {
 
 final class DataService {
     private let fetcher: Fetcher
+    private let decoder: JSONDecoder
 
-    init(fetcher: Fetcher) {
+    init(fetcher: Fetcher, decoder: JSONDecoder) {
         self.fetcher = fetcher
+        self.decoder = decoder
     }
 
     func users(perPage: Int = Constants.usersPerPage) -> Observable<[User]> {
         let randomPosition = Int(arc4random_uniform(Constants.randomNumberLimit))
         return fetcher.rx.request(Endpoints.users(position: randomPosition, perPage: perPage))
-            .map { response -> [UserDTO] in
+            .map { [decoder] response -> [UserDTO] in
                 guard let data = response.rawData else { return [] }
-                return (try? JSONDecoder().decode([UserDTO].self, from: data)) ?? []
+                return (try? decoder.decode([UserDTO].self, from: data)) ?? []
             }
             .flatMapLatest { [unowned self] userDTOs -> Observable<[User]> in
                 return Observable.from(
@@ -39,9 +41,9 @@ final class DataService {
 
     func repositories(login: String) -> Observable<[Repository]> {
         return fetcher.rx.request(Endpoints.repositories(userLogin: login))
-            .map { response in
+            .map { [decoder] response in
                 guard let data = response.rawData else { return [] }
-                return ((try? JSONDecoder().decode([RepositoryDTO].self, from: data)) ?? [])
+                return ((try? decoder.decode([RepositoryDTO].self, from: data)) ?? [])
                     .map { repositoryDTO in
                         return Repository(name: repositoryDTO.name, stars: repositoryDTO.stars, language: repositoryDTO.language, url: repositoryDTO.url)
                     }
