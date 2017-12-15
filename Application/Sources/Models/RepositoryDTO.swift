@@ -5,7 +5,6 @@ struct RepositoryDTO: Codable {
     let url: URL
     let name: String
     let stars: Int
-    let license: String?
     let language: String?
 
     enum CodingKeys: String, CodingKey {
@@ -13,7 +12,6 @@ struct RepositoryDTO: Codable {
         case url = "html_url"
         case name
         case stars = "stargazers_count"
-        case license
         case language
     }
 }
