@@ -7,7 +7,7 @@
     http://schema.reactant.tech/layout http://schema.reactant.tech/layout.xsd"
     rootView="true">
 
-    <View
+    <TableView
         field="repositoryTableView"
         layout:edges="super" />
 

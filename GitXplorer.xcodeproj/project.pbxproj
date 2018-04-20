@@ -399,7 +399,7 @@
 			name = "Run ReactantUI";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\ncd \"$SRCROOT/Application/Sources\"\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
+			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\ncd \"$SRCROOT/Application/Sources\"\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" generate --enable-live --inputPath=\"$SRCROOT/Application/Sources/\" --outputFile=\"$SRCROOT/Application/Generated/GeneratedUI.swift\" --xcodeprojPath=\"$PROJECT_DIR/$PROJECT_NAME.xcodeproj\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
